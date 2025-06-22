@@ -8,7 +8,7 @@ Mi objetivo es ofrecer una experiencia intuitiva que permita a reclutadores y co
 
 ### Link
 
-- Demo: [Link](https://sebastianguanque.github.io/)
+- Demo: [Link](https://sebastianguanque.dev.ar/)
 
 ---
 
@@ -73,6 +73,6 @@ Sebastián Guanque
 🔗 Gmail: [guanquesebastian@gmail.com](mailto:guanquesebastian@gmail.com)
 🔗 GitHub: [@sebastianguanque](https://github.com/sebastianguanque)
 🔗 LinkedIn: [@sebastianguanque](https://linkedin.com/in/sebastianguanque)
-🔗 Portafolio: [sebastianguanque](https://sebastianguanque.github.io/)
+🔗 Portafolio: [sebastianguanque](https://sebastianguanque.dev.ar/)
 
 ---
