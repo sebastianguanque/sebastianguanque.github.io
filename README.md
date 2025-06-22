@@ -8,17 +8,21 @@ Mi objetivo es ofrecer una experiencia intuitiva que permita a reclutadores y co
 
 ### Link
 
-- Demo: [Link]()
+- Demo: [Link](https://sebastianguanque.github.io/)
 
 ---
 
 ## 📚 Tabla de Contenidos
 
-- [Acerca del Proyecto](#-acerca-del-proyecto)
-- [Características Principales](#-características-principales)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Licencia](#-licencia)
-- [Contacto](#-contacto)
+- [🚀 Portafolio Personal — Sebastián Guanque](#-portafolio-personal--sebastián-guanque)
+  - [📝 Descripción](#-descripción)
+    - [Link](#link)
+  - [📚 Tabla de Contenidos](#-tabla-de-contenidos)
+  - [💡 Acerca del Proyecto](#-acerca-del-proyecto)
+  - [✨ Características Principales](#-características-principales)
+  - [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
+  - [📄 Licencia](#-licencia)
+  - [📧 Contacto](#-contacto)
 
 ---
 
@@ -26,10 +30,10 @@ Mi objetivo es ofrecer una experiencia intuitiva que permita a reclutadores y co
 
 Mi portafolio personal es el reflejo de mi trayectoria y pasión por el desarrollo frontend. Fue creado para ser un espacio central donde puedo presentar:
 
-* **Mi perfil profesional:** Quién soy, mi formación (institucional y autodidacta) y mi enfoque al construir soluciones web.
-* **Mis proyectos:** Una muestra de trabajos significativos, detallando los desafíos superados y las tecnologías aplicadas.
-* **Mis habilidades:** Un listado de las herramientas y lenguajes con los que trabajo habitualmente.
-* **Información de contacto:** Diversas vías para conectar conmigo.
+- **Mi perfil profesional:** Quién soy, mi formación (institucional y autodidacta) y mi enfoque al construir soluciones web.
+- - **Mis habilidades:** Un listado de las herramientas y lenguajes con los que trabajo habitualmente.
+- **Mis proyectos:** Una muestra de trabajos significativos, detallando los desafíos superados y las tecnologías aplicadas.
+- **Información de contacto:** Diversas vías para conectar conmigo.
 
 Cada sección está diseñada para ser clara y concisa, permitiendo una navegación fluida y una comprensión rápida de mi capacidad para construir experiencias web intuitivas y visualmente impactantes.
 
@@ -37,12 +41,12 @@ Cada sección está diseñada para ser clara y concisa, permitiendo una navegaci
 
 ## ✨ Características Principales
 
--   **Sección "Sobre Mí":** Presentación concisa del perfil profesional, formación y enfoque.
--   **Sección "Proyectos":** Galería de proyectos con enlaces directos a demos y repositorios de código.
--   **Sección "Habilidades":** Resumen visual de las tecnologías y herramientas dominadas.
--   **Sección "Contacto":** Formulario de contacto directo y enlaces a redes profesionales.
--   **Diseño Responsivo:** Adaptabilidad total a diferentes dispositivos (escritorio, tablet, móvil).
--   **Experiencia de Usuario Intuitiva:** Navegación fluida y animaciones sutiles para una interacción agradable.
+- **Sección "Sobre Mí":** Presentación concisa del perfil profesional, formación y enfoque.
+- **Sección "Habilidades":** Resumen visual de las tecnologías y herramientas dominadas.
+- **Sección "Proyectos":** Galería de proyectos con enlaces directos a demos y repositorios de código.
+- **Sección "Contacto":** Formulario de contacto directo y enlaces a redes profesionales.
+- **Diseño Responsivo:** Adaptabilidad total a diferentes dispositivos (escritorio, tablet, móvil).
+- **Experiencia de Usuario Intuitiva:** Navegación fluida y animaciones sutiles para una interacción agradable.
 
 ---
 
@@ -50,10 +54,10 @@ Cada sección está diseñada para ser clara y concisa, permitiendo una navegaci
 
 Este portafolio ha sido construido utilizando las tecnologías fundamentales del desarrollo web frontend, asegurando una base robusta y un rendimiento óptimo:
 
--   **Frontend:**
-    * HTML5 (Estructura semántica)
-    * CSS3 (Estilos y responsividad, incluyendo variables y gradientes)
-    * JavaScript (Interactividad, animaciones de scroll y validación de formulario)
+- **Frontend:**
+  - HTML5 (Estructura semántica)
+  - CSS3 (Estilos y responsividad, incluyendo variables)
+  - JavaScript (Interactividad, animaciones de scroll y validación de formulario)
 
 ---
 
@@ -69,6 +73,6 @@ Sebastián Guanque
 🔗 Gmail: [guanquesebastian@gmail.com](mailto:guanquesebastian@gmail.com)
 🔗 GitHub: [@sebastianguanque](https://github.com/sebastianguanque)
 🔗 LinkedIn: [@sebastianguanque](https://linkedin.com/in/sebastianguanque)
-🔗 Portafolio (este proyecto): [Tu_Link_al_Repo_del_Portafolio](Tu_Link_al_Repo_del_Portafolio)
+🔗 Portafolio: [sebastianguanque](https://sebastianguanque.github.io/)
 
 ---
