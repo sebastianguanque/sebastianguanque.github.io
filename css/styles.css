@@ -670,6 +670,16 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.btn-gmail {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
 .contact-icon {
   color: var(--color-accent-green);
   transition: transform var(--transition-normal);
