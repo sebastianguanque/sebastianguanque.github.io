@@ -2,9 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Navegación y menú móvil
   setupNavigation();
 
-  // Efectos de scroll
-  setupScrollEffects();
-
   // Validación de formulario
   setupFormValidation();
 
@@ -37,7 +34,7 @@ function setupNavigation() {
   window.addEventListener("scroll", updateActiveNavLink);
 }
 
-// Actualizar enlace activo en la navegación - FUNCIÓN CORREGIDA
+// Actualizar enlace activo en la navegación
 function updateActiveNavLink() {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-links a");
@@ -93,52 +90,6 @@ function updateActiveNavLink() {
     if (link.getAttribute("href").substring(1) === currentSection) {
       link.classList.add("active");
     }
-  });
-}
-
-// Efectos de scroll
-function setupScrollEffects() {
-  const cards = document.querySelectorAll(".card");
-  const proyectoCards = document.querySelectorAll(".proyecto-card");
-  const skillItems = document.querySelectorAll(".skill-item");
-
-  // Función para verificar si un elemento está en el viewport
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top <=
-        (window.innerHeight || document.documentElement.clientHeight) * 0.9 &&
-      rect.bottom >= 0
-    );
-  }
-
-  // Función para aplicar efectos de aparición
-  function checkVisibility() {
-    [].concat(...cards, ...proyectoCards, ...skillItems).forEach((item) => {
-      if (isInViewport(item)) {
-        setTimeout(() => {
-          item.classList.add("visible");
-        }, 100);
-      }
-    });
-  }
-  // Aplicar clase inicial para animaciones
-  [].concat(...cards, ...proyectoCards, ...skillItems).forEach((item) => {
-    item.style.opacity = "0";
-    item.style.transform = "translateY(20px)";
-    item.style.transition = "opacity 0.5s ease, transform 0.5s ease";
-  });
-
-  // Verificar visibilidad al cargar y al hacer scroll
-  window.addEventListener("scroll", checkVisibility);
-  window.addEventListener("resize", checkVisibility);
-
-  // Verificar visibilidad inicial después de un pequeño retraso
-  setTimeout(checkVisibility, 300);
-
-  // Agregar clase visible para elementos que ya están en el viewport
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(checkVisibility, 300);
   });
 }
 
@@ -270,7 +221,7 @@ function setupFormValidation() {
 function setupSkillsAnimation() {
   const skillItems = document.querySelectorAll(".skill-item");
 
-  skillItems.forEach((item, index) => {
+  skillItems.forEach((item) => {
     item.addEventListener("mouseenter", function () {
       // Agregar efecto de brillo
       this.style.boxShadow = "0 10px 30px rgba(255, 255, 255, 0.1)";
@@ -291,11 +242,6 @@ style.textContent = `
     100% { transform: rotate(360deg); }
   }
   
-  .visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-  
   .skill-item:hover {
     transform: scale(1.02) !important;
   }
@@ -307,8 +253,6 @@ style.textContent = `
   .btn:hover i {
     transform: translateX(3px);
   }
-  
- 
   
   .interest-item:hover .interest-icon {
     transform: scale(1.2);
