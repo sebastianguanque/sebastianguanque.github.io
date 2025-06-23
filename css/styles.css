@@ -720,12 +720,23 @@ img {
 }
 
 .social-link:hover {
-  transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.2);
   color: var(--color-text-primary);
 }
 
-.redes {
+.cv-text {
+  fill: var(--color-text-secondary);
+  transition: fill 0.3s ease;
+  font-size: 7.9px;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.cv-icon:hover > .cv-text {
+  fill: var(--color-text-primary);
+}
+
+.perfiles-profesionales {
   margin-top: 1.4rem;
 }
 

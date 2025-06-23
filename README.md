@@ -44,7 +44,7 @@ Cada sección está diseñada para ser clara y concisa, permitiendo una navegaci
 - **Sección "Sobre Mí":** Presentación concisa del perfil profesional, formación y enfoque.
 - **Sección "Habilidades":** Resumen visual de las tecnologías y herramientas dominadas.
 - **Sección "Proyectos":** Galería de proyectos con enlaces directos a demos y repositorios de código.
-- **Sección "Contacto":** Formulario de contacto directo y enlaces a redes profesionales.
+- **Sección "Contacto":** Formulario de contacto directo y enlaces a perfiles profesionales.
 - **Diseño Responsivo:** Adaptabilidad total a diferentes dispositivos (escritorio, tablet, móvil).
 - **Experiencia de Usuario Intuitiva:** Navegación fluida y animaciones sutiles para una interacción agradable.
 

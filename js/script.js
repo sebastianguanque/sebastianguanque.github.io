@@ -308,9 +308,7 @@ style.textContent = `
     transform: translateX(3px);
   }
   
-  .social-link:hover {
-    transform: scale(1.1);
-  }
+ 
   
   .interest-item:hover .interest-icon {
     transform: scale(1.2);
