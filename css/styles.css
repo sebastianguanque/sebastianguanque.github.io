@@ -58,9 +58,19 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+p {
+  text-wrap: pretty;
 }
 
 ul {
