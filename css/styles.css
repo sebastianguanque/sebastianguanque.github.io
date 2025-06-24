@@ -383,6 +383,11 @@ img {
   line-height: 1;
 }
 
+.skill-icon-image {
+  width: 48px;
+  height: 48px;
+}
+
 .skill-info {
   flex: 1;
 }
