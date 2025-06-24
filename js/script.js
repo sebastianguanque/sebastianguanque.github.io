@@ -259,10 +259,10 @@ function setupFormValidation() {
       submitBtn.innerHTML = `<i class="fas fa-paper-plane"></i> Enviar`;
       formSuccess.style.display = "flex";
 
-      // Ocultar automáticamente luego de 3 segundos
+      // Ocultar automáticamente luego de 4 segundos
       setTimeout(() => {
         formSuccess.style.display = "none";
-      }, 300);
+      }, 4000);
     }
 
     if (tipo === "error") {
@@ -270,10 +270,10 @@ function setupFormValidation() {
       submitBtn.innerHTML = `<i class="fas fa-paper-plane"></i> Enviar`;
       formError.style.display = "flex";
 
-      // Ocultar automáticamente luego de 3 segundos
+      // Ocultar automáticamente luego de 4 segundos
       setTimeout(() => {
         formError.style.display = "none";
-      }, 300);
+      }, 4000);
     }
   }
 }
