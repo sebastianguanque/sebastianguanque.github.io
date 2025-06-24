@@ -93,6 +93,67 @@ function updateActiveNavLink() {
   });
 }
 
+// Animaciones de habilidades
+function setupSkillsAnimation() {
+  const skillItems = document.querySelectorAll(".skill-item");
+
+  skillItems.forEach((item) => {
+    item.addEventListener("mouseenter", function () {
+      // Agregar efecto de brillo
+      this.style.boxShadow = "0 10px 30px rgba(255, 255, 255, 0.1)";
+    });
+
+    item.addEventListener("mouseleave", function () {
+      // Remover efecto de brillo
+      this.style.boxShadow = "";
+    });
+  });
+}
+
+// Agregar estilos CSS para animaciones dinámicas
+const style = document.createElement("style");
+style.textContent = `
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.02) !important;
+  }
+  
+  .proyecto-card:hover .proyecto-image img {
+    transform: scale(1.1);
+  }
+  
+  .btn:hover i {
+    transform: translateX(3px);
+  }
+  
+  .interest-item:hover .interest-icon {
+    transform: scale(1.2);
+  }
+  
+  .contact-item:hover .contact-icon {
+    transform: scale(1.2);
+  }
+`;
+document.head.appendChild(style);
+
+// Smooth scroll para navegación
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});
+
 // Validación de formulario
 function setupFormValidation() {
   const form = document.getElementById("contact-form");
@@ -216,67 +277,6 @@ function setupFormValidation() {
     }
   }
 }
-
-// Animaciones de habilidades
-function setupSkillsAnimation() {
-  const skillItems = document.querySelectorAll(".skill-item");
-
-  skillItems.forEach((item) => {
-    item.addEventListener("mouseenter", function () {
-      // Agregar efecto de brillo
-      this.style.boxShadow = "0 10px 30px rgba(255, 255, 255, 0.1)";
-    });
-
-    item.addEventListener("mouseleave", function () {
-      // Remover efecto de brillo
-      this.style.boxShadow = "";
-    });
-  });
-}
-
-// Agregar estilos CSS para animaciones dinámicas
-const style = document.createElement("style");
-style.textContent = `
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  .skill-item:hover {
-    transform: scale(1.02) !important;
-  }
-  
-  .proyecto-card:hover .proyecto-image img {
-    transform: scale(1.1);
-  }
-  
-  .btn:hover i {
-    transform: translateX(3px);
-  }
-  
-  .interest-item:hover .interest-icon {
-    transform: scale(1.2);
-  }
-  
-  .contact-item:hover .contact-icon {
-    transform: scale(1.2);
-  }
-`;
-document.head.appendChild(style);
-
-// Smooth scroll para navegación
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
 
 // Copiar correo electrónico al hacer clic
 document.getElementById("gmail-card").addEventListener("click", () => {
