@@ -405,6 +405,7 @@
                     href="https://sebastianguanque.dev.ar/testclado/"
                     class="btn btn-primary"
                     target="_blank"
+                    aria-label="Ver demo del proyecto Testclado"
                   >
                     <i class="fas fa-external-link-alt"></i> Ver Demo
                   </a>
@@ -412,6 +413,7 @@
                     href="https://github.com/sebastianguanque/testclado"
                     class="btn btn-outline"
                     target="_blank"
+                    aria-label="Ver código del proyecto Testclado"
                   >
                     <i class="fab fa-github"></i> Ver Código
                   </a>
@@ -456,6 +458,7 @@
                     href="https://sebastianguanque.dev.ar/contador-truco/"
                     class="btn btn-primary"
                     target="_blank"
+                    aria-label="Ver demo del proyecto contador de truco"
                   >
                     <i class="fas fa-external-link-alt"></i> Ver Demo
                   </a>
@@ -463,6 +466,7 @@
                     href="https://github.com/sebastianguanque/contador-truco"
                     class="btn btn-outline"
                     target="_blank"
+                    aria-label="Ver código del proyecto contador de truco"
                   >
                     <i class="fab fa-github"></i> Ver Código
                   </a>
@@ -504,6 +508,7 @@
                     href="https://sebastianguanque.dev.ar/app-notes/"
                     class="btn btn-primary"
                     target="_blank"
+                    aria-label="Ver demo del proyecto app notes"
                   >
                     <i class="fas fa-external-link-alt"></i> Ver Demo
                   </a>
@@ -511,6 +516,7 @@
                     href="https://github.com/sebastianguanque/app-notes"
                     class="btn btn-outline"
                     target="_blank"
+                    aria-label="Ver código del proyecto app notes"
                   >
                     <i class="fab fa-github"></i> Ver Código
                   </a>
@@ -551,6 +557,7 @@
                     href="https://github.com/sebastianguanque/Desafios-FrontendMentor"
                     class="btn btn-outline"
                     target="_blank"
+                    aria-label="Ver código del proyecto Desafios FrontendMentor"
                   >
                     <i class="fab fa-github"></i> Ver Código
                   </a>
@@ -591,8 +598,14 @@
                         id="nombre"
                         name="nombre"
                         placeholder="Escribe tu nombre"
+                        aria-describedby="nombre-error"
+                        aria-invalid="false"
                       />
-                      <span class="error-text" id="nombre-error"></span>
+                      <span
+                        class="error-text"
+                        id="nombre-error"
+                        aria-live="assertive"
+                      ></span>
                     </div>
 
                     <!-- Correo -->
@@ -602,9 +615,15 @@
                         type="email"
                         id="correo"
                         name="email"
-                        placeholder="ejemplo@gmail.com"
+                        placeholder="Escribe tu correo"
+                        aria-describedby="correo-error"
+                        aria-invalid="false"
                       />
-                      <span class="error-text" id="correo-error"></span>
+                      <span
+                        class="error-text"
+                        id="correo-error"
+                        aria-live="assertive"
+                      ></span>
                     </div>
 
                     <!-- Asunto -->
@@ -615,8 +634,14 @@
                         id="asunto"
                         name="asunto"
                         placeholder="¿De qué quieres hablar?"
+                        aria-describedby="asunto-error"
+                        aria-invalid="false"
                       />
-                      <span class="error-text" id="asunto-error"></span>
+                      <span
+                        class="error-text"
+                        id="asunto-error"
+                        aria-live="assertive"
+                      ></span>
                     </div>
 
                     <!-- Mensaje -->
@@ -626,8 +651,14 @@
                         id="mensaje"
                         name="mensaje"
                         placeholder="Escribir un mensaje"
+                        aria-describedby="mensaje-error"
+                        aria-invalid="false"
                       ></textarea>
-                      <span class="error-text" id="mensaje-error"></span>
+                      <span
+                        class="error-text"
+                        id="mensaje-error"
+                        aria-live="assertive"
+                      ></span>
                     </div>
 
                     <!-- Submit Button -->
@@ -636,19 +667,32 @@
                       id="submit-btn"
                       class="btn btn-primary btn-block"
                     >
-                      <i class="fas fa-paper-plane"></i>
+                      <i class="fas fa-paper-plane" aria-hidden="true"></i>
                       <span>Enviar</span>
                     </button>
 
-                    <div id="form-success" class="form-message success-message">
-                      <i class="fas fa-check-circle"></i>
+                    <div
+                      id="form-success"
+                      class="form-message success-message"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      <i class="fas fa-check-circle" aria-hidden="true"></i>
                       <p>
                         ¡Mensaje enviado exitosamente! Te responderé pronto.
                       </p>
                     </div>
 
-                    <div id="form-error" class="form-message error-message">
-                      <i class="fas fa-exclamation-circle"></i>
+                    <div
+                      id="form-error"
+                      class="form-message error-message"
+                      role="alert"
+                      aria-live="assertive"
+                    >
+                      <i
+                        class="fas fa-exclamation-circle"
+                        aria-hidden="true"
+                      ></i>
                       <p>
                         Hubo un error al enviar el mensaje. Inténtalo de nuevo.
                       </p>

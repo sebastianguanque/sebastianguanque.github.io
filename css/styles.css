@@ -249,8 +249,8 @@ img {
 }
 
 .btn-primary {
-  background: var(--color-bg-primary);
-  color: var(--color-text-primary);
+  background: #ba4e0d;
+  color: #ffffff;
 }
 
 .btn-primary:hover {

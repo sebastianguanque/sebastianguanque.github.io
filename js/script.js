@@ -181,6 +181,7 @@ function setupFormValidation() {
       document.getElementById("nombre-error").textContent =
         "El nombre es obligatorio";
       nombre.classList.add("error");
+      nombre.setAttribute("aria-invalid", "true");
       valido = false;
     }
 
@@ -188,10 +189,12 @@ function setupFormValidation() {
       document.getElementById("correo-error").textContent =
         "El correo es obligatorio";
       correo.classList.add("error");
+      correo.setAttribute("aria-invalid", "true");
       valido = false;
     } else if (!/\S+@\S+\.\S+/.test(correo.value)) {
       document.getElementById("correo-error").textContent = "Correo inválido";
       correo.classList.add("error");
+      correo.setAttribute("aria-invalid", "true");
       valido = false;
     }
 
@@ -199,6 +202,7 @@ function setupFormValidation() {
       document.getElementById("asunto-error").textContent =
         "El asunto es obligatorio";
       asunto.classList.add("error");
+      asunto.setAttribute("aria-invalid", "true");
       valido = false;
     }
 
@@ -206,6 +210,7 @@ function setupFormValidation() {
       document.getElementById("mensaje-error").textContent =
         "El mensaje es obligatorio";
       mensaje.classList.add("error");
+      mensaje.setAttribute("aria-invalid", "true");
       valido = false;
     }
 
