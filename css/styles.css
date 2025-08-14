@@ -4,7 +4,7 @@
   --color-bg-primary: #0f172a;
   --color-bg-secondary: #1e293b;
   --color-text-primary: #f8fafc;
-  --color-text-secondary: #a8a8a8;
+  --color-text-secondary: #cbd5e1;
   --color-accent-primary: #00d4ff;
   --color-accent-secondary: #00d5ffb6;
   --color-accent-tertiary: #4ade80;
@@ -586,7 +586,7 @@ img {
 .form-group label {
   display: block;
   margin-bottom: var(--spacing-xs);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   font-weight: 500;
 }
 
