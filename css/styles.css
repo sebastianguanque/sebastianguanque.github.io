@@ -739,10 +739,6 @@ img {
   fill: var(--color-text-primary);
 }
 
-.perfiles-profesionales {
-  margin-top: 1.4rem;
-}
-
 /* Media Queries */
 
 @media (min-width: 768px) {
