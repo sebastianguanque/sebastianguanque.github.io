@@ -296,3 +296,73 @@ document.getElementById("gmail-card").addEventListener("click", () => {
     }, 2000);
   });
 });
+
+// Animaciones con GSAP
+gsap.from(".nav-link", {
+  y: -100,
+  duration: 1,
+  ease: "power.out",
+  stagger: 0.05,
+});
+
+gsap.from(".logo", {
+  x: -50,
+  opacity: 0,
+  duration: 1.2,
+  ease: "power2.out",
+  delay: 0.2,
+});
+
+gsap.from(".herramientas", {
+  x: 50,
+  opacity: 0,
+  duration: 1.2,
+  ease: "power2.out",
+  delay: 0.2,
+});
+
+gsap.from(".info-personal", {
+  x: -50,
+  opacity: 0,
+  duration: 1.2,
+  ease: "power2.out",
+  delay: 0.2,
+});
+
+// Animación: Titulos de sección al hacer scroll
+const sections = gsap.utils.toArray(".section");
+
+sections.forEach((section) => {
+  const title = section.querySelector(".section-titulo");
+
+  if (title) {
+    gsap.from(title, {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 85%",
+      },
+    });
+  }
+});
+
+// Animación: Card de los proyectos
+const projectCards = gsap.utils.toArray(".proyecto-card");
+
+projectCards.forEach((card) => {
+  gsap.from(card, {
+    opacity: 0,
+    y: 40,
+    duration: 0.8,
+    ease: "power2.out",
+
+    scrollTrigger: {
+      trigger: card,
+      start: "top 85%",
+      once: true,
+    },
+  });
+});

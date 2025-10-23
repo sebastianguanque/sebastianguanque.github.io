@@ -47,6 +47,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   scroll-padding-top: 80px;
 }
 
@@ -271,6 +272,8 @@ img {
 }
 
 .btn-block {
+  background-color: var(--color-accent-primary);
+  color: var(--color-bg-primary);
   width: 100%;
 }
 

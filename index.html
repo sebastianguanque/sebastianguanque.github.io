@@ -77,14 +77,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- JS -->
-    <script src="js/script.js" defer></script>
-
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/a7c12d7d91.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -94,9 +97,11 @@
 
         <nav>
           <ul class="nav-links">
-            <li><a href="#sobre-mi" class="active">Sobre Mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li class="nav-link">
+              <a href="#sobre-mi" class="active">Sobre Mí</a>
+            </li>
+            <li class="nav-link"><a href="#proyectos">Proyectos</a></li>
+            <li class="nav-link"><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
         <button class="menu-toggle" aria-label="Menú">
