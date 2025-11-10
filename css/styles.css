@@ -763,9 +763,20 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .sobre-mi .card-content {
-    min-height: 720px;
+  .info-personal {
+    align-self: stretch;
+
+    & .card {
+      height: 100%;
+      /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    }
   }
+
+  /* .sobre-mi .card-content {
+    min-height: 720px;
+  } */
 
   .contacto-content {
     grid-template-columns: 3fr 2fr;
